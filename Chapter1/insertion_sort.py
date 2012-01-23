@@ -12,7 +12,7 @@ def insertion_sort(sequence):
     for i in range(1, len(sequence)):
         current_value = sequence[i]
         j = i
-        while (current_value < sequence[j-1] and j > 0):
+        while (j > 0 and current_value < sequence[j-1]):
             j -= 1
         sequence.insert(j, sequence.pop(i))
 
